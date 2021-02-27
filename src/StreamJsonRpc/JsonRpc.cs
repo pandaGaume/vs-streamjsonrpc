@@ -1544,6 +1544,7 @@ namespace StreamJsonRpc
             return new JsonRpcError
             {
                 RequestId = request.RequestId,
+                UserState = request.UserState,
                 Error = new JsonRpcError.ErrorDetail
                 {
                     Code = JsonRpcErrorCode.RequestCanceled,
@@ -1767,6 +1768,7 @@ namespace StreamJsonRpc
             return new JsonRpcError
             {
                 RequestId = request.RequestId,
+                UserState = request.UserState,
                 Error = errorDetails,
             };
         }
@@ -1790,6 +1792,7 @@ namespace StreamJsonRpc
             return new JsonRpcError
             {
                 RequestId = request.RequestId,
+                UserState = request.UserState,
                 Error = errorDetails,
             };
         }
@@ -1912,6 +1915,7 @@ namespace StreamJsonRpc
                         return new JsonRpcResult
                         {
                             RequestId = request.RequestId,
+                            UserState = request.UserState,
                             Result = result,
                             ResultDeclaredType = targetMethod.ReturnType,
                         };
@@ -2000,6 +2004,7 @@ namespace StreamJsonRpc
                         return new JsonRpcError
                         {
                             RequestId = request.RequestId,
+                            UserState = request.UserState,
                             Error = new JsonRpcError.ErrorDetail
                             {
                                 Code = JsonRpcErrorCode.MethodNotFound,
@@ -2017,6 +2022,7 @@ namespace StreamJsonRpc
                         return new JsonRpcError
                         {
                             RequestId = request.RequestId,
+                            UserState = request.UserState,
                             Error = new JsonRpcError.ErrorDetail
                             {
                                 Code = JsonRpcErrorCode.InvalidParams,
@@ -2085,6 +2091,7 @@ namespace StreamJsonRpc
                 result = new JsonRpcResult
                 {
                     RequestId = request.RequestId,
+                    UserState = request.UserState
                 };
             }
 

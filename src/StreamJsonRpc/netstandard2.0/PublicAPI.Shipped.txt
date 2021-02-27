@@ -222,6 +222,8 @@ StreamJsonRpc.Protocol.JsonRpcErrorCode.ParseError = -32700 -> StreamJsonRpc.Pro
 StreamJsonRpc.Protocol.JsonRpcErrorCode.RequestCanceled = -32800 -> StreamJsonRpc.Protocol.JsonRpcErrorCode
 StreamJsonRpc.Protocol.JsonRpcMessage
 StreamJsonRpc.Protocol.JsonRpcMessage.JsonRpcMessage() -> void
+StreamJsonRpc.Protocol.JsonRpcMessage.UserState.get -> object?
+StreamJsonRpc.Protocol.JsonRpcMessage.UserState.set -> void
 StreamJsonRpc.Protocol.JsonRpcMessage.Version.get -> string!
 StreamJsonRpc.Protocol.JsonRpcMessage.Version.set -> void
 StreamJsonRpc.Protocol.JsonRpcRequest
