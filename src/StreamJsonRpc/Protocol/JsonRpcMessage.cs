@@ -20,11 +20,5 @@ namespace StreamJsonRpc.Protocol
         /// <value>Defaults to "2.0".</value>
         [DataMember(Name = "jsonrpc", Order = 0, IsRequired = true)]
         public string Version { get; set; } = "2.0";
-
-        /// <summary>
-        /// Gets or sets user local content to share from Request to Result or Error.
-        /// </summary>
-        [IgnoreDataMember]
-        public object? UserState { get; set; }
     }
 }
